@@ -1,6 +1,6 @@
 FROM quay.io/justcontainers/base-alpine:v0.11.1
 
-ENV ACMETOOL_VERSION=0.0.51 \
+ENV ACMETOOL_VERSION=0.0.58 \
     CONFD_VERSION=0.12.0-alpha3 \
     ACME_EMAIL=changeme@example.com \
     ACME_SERVER=https://acme-staging.api.letsencrypt.org/directory \
