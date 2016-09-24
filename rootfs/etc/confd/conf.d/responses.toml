@@ -3,5 +3,6 @@ src = "responses.tmpl"
 dest = "/var/lib/acme/conf/responses"
 keys = [
     "/acme/email",
-    "/acme/server"
+    "/acme/server",
+    "/acme/agreement"
 ]

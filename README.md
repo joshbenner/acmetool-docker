@@ -14,6 +14,7 @@ Configuration is performed with Docker environment variables.
 | -------- | ------- | ----------- |
 | `ACME_EMAIL` | changeme@example.com | Email used to register with LetsEncrypt |
 | `ACME_SERVER` | https://acme-staging.api.letsencrypt.org/directory | ACME API URL, defaults to staging API. |
+| `ACME_AGREEMENT` | changeme | URL of the ACME agreement to accept |
 | `CERT_DOMAINS` | example.com www.example.com | Space-delimited list of domains to get certificates for |
 | `HAPROXY_ALWAYS_GENERATE` | yes | If set, generates combined cert and private key files that can be used by HAProxy. |
 
