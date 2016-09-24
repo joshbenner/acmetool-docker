@@ -4,6 +4,8 @@ Docker container to auto-acquire and renew SSL certs with LetsEncrypt.
 
 Uses [acmetool](https://github.com/hlandau/acme) for LetsEncrypt interactions.
 
+[![Docker Repository on Quay](https://quay.io/repository/joshbenner/acmetool/status "Docker Repository on Quay")](https://quay.io/repository/joshbenner/acmetool)
+
 ## Configuration
 
 Configuration is performed with Docker environment variables.
