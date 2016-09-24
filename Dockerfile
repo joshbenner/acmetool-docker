@@ -16,9 +16,10 @@ RUN apk --no-cache add nginx && \
     mkdir /etc/cron.d
 
 ADD https://github.com/kelseyhightower/confd/releases/download/v${CONFD_VERSION}/confd-${CONFD_VERSION}-linux-amd64 /usr/local/bin/confd
-RUN chmod +x /usr/local/bin/confd
 
 COPY rootfs /
+
+RUN chmod +x /usr/local/bin/confd /etc/periodic/daily/*
 
 EXPOSE 80
 
