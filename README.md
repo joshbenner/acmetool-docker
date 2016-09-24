@@ -16,3 +16,9 @@ Configuration is performed with Docker environment variables.
 | `ACME_SERVER` | https://acme-staging.api.letsencrypt.org/directory | ACME API URL, defaults to staging API. |
 | `CERT_DOMAINS` | example.com www.example.com | Space-delimited list of domains to get certificates for |
 | `HAPROXY_ALWAYS_GENERATE` | yes | If set, generates combined cert and private key files that can be used by HAProxy. |
+
+## Volumes
+
+Mounting a volume at `/var/lib/acme` is highly recommended, as this will persist
+any acquired certificates and allow other containers to volume-mount
+certificates.
